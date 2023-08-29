@@ -1,6 +1,6 @@
 # Linear Algebra Projects
 
-*A couple projects I made to practice linear algebra with Julia.*
+*A couple of projects I made to practice Linear Algebra using Julia.*
 
 ---------------------------------------------------------------------
 | Project | Topic | Description |
