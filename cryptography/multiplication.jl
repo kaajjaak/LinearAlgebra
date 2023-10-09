@@ -15,8 +15,6 @@ module multiplication
 
     function decrypt(x::String)
         matrix = reshape(vcat([Int(c) for c in x], zeros(Int, 3 - length(x) % 3 == 3 ? 0 : 3 - length(x) % 3)), 3, Int(round(length(x) / 3, RoundUp)))
-        display(key)
-        display(inv(key))
         dec = *(inv(key), matrix)
         return String([Char(round(c)) for c in dec if c != 0])
     end
